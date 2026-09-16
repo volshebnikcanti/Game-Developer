@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Портфолио игровых и интерактивных проектов." />
+    <title>Портфолио — игры и проекты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="header container">
+      <a class="logo" href="#top" aria-label="На главную">YOUR<span>_</span>WORK</a>
+      <a class="header-link" href="#projects">Проекты <span>↘</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <p class="eyebrow">GAME DEVELOPER / CREATIVE TECHNOLOGIST</p>
+        <h1>Делаю игры,<br /><em>в которые хочется играть.</em></h1>
+        <div class="hero-bottom">
+          <p>Небольшая подборка игровых и интерактивных проектов. Открывайте, играйте, исследуйте.</p>
+          <a class="round-button" href="#projects" aria-label="К проектам">↓</a>
+        </div>
+        <div class="orb orb-one" aria-hidden="true"></div>
+        <div class="orb orb-two" aria-hidden="true"></div>
+      </section>
+
+      <section class="projects container" id="projects">
+        <div class="section-title">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Игры</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-one">
+            <div class="card-art" aria-hidden="true">
+              <span class="sun"></span><span class="hill hill-a"></span><span class="hill hill-b"></span>
+              <span class="character character-a"></span><span class="spark spark-a">✦</span><span class="spark spark-b">✦</span>
+            </div>
+            <div class="card-copy">
+              <div><p class="project-number">01 / WEB GAME</p><h3>Игровой проект 01</h3></div>
+              <a href="https://poki.com/en/preview/0fb18f8c-0205-46f5-80f1-90db5573d32d/44653eb8-b43b-4bc2-a3bc-102a88415f2b" target="_blank" rel="noopener noreferrer">Играть <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card project-two">
+            <div class="card-art" aria-hidden="true">
+              <span class="moon"></span><span class="planet"></span><span class="ring"></span>
+              <span class="star star-a">✦</span><span class="star star-b">✦</span><span class="star star-c">·</span>
+            </div>
+            <div class="card-copy">
+              <div><p class="project-number">02 / WEB GAME</p><h3>Игровой проект 02</h3></div>
+              <a href="https://poki.com/en/preview/b4ad99ec-dac4-4c6b-b0e3-0bce2c4e9b83/8efb4ad0-d594-44e3-bef9-3acb6468d8c1" target="_blank" rel="noopener noreferrer">Играть <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact container">
+        <p class="eyebrow">LET'S MAKE SOMETHING FUN</p>
+        <h2>Есть идея?<br /><a href="mailto:hello@example.com">Напишите мне ↗</a></h2>
+        <p class="contact-note">Замените <code>hello@example.com</code> на ваш настоящий email перед публикацией.</p>
+      </section>
+    </main>
+    <footer class="footer container"><span>© <span id="year"></span> YOUR_WORK</span><a href="#top">Наверх ↑</a></footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
